@@ -18,7 +18,13 @@ namespace ServerTrack.WebApi.Repositories
 
         public void Record(string serverName, ServerLoadEntry serverLoadEntry)
         {
-            ServerRecords.Add(serverName, new List<ServerLoadData>());
+            ServerRecords.Add(serverName, new List<ServerLoadData>
+            {
+                new ServerLoadData
+                {
+                    
+                }
+            });
         }
     }
 
