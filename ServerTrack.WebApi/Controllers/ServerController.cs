@@ -28,7 +28,7 @@ namespace ServerTrack.WebApi.Controllers
         [Route("{serverName}/LoadData")]
         public HttpResponseMessage Post(string serverName, [FromBody]ServerLoadEntry serverLoadEntry)
         {
-            _serverLoadRepository.Record(serverLoadEntry);
+            _serverLoadRepository.Record(serverName, serverLoadEntry);
 
             return new HttpResponseMessage(HttpStatusCode.OK);
         }

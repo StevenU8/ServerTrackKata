@@ -9,16 +9,16 @@ namespace ServerTrack.WebApi.Repositories
 {
     public class ServerLoadRepository
     {
-        public Dictionary<string, ServerLoadData> ServerLoadData { get; set; }
+        public Dictionary<string, List<ServerLoadData>> ServerRecords { get; set; }
 
         public ServerLoadRepository()
         {
-            ServerLoadData = new Dictionary<string, ServerLoadData>();
+            ServerRecords = new Dictionary<string, List<ServerLoadData>>();
         }
 
-        public void Record(ServerLoadEntry serverLoadEntry)
+        public void Record(string serverName, ServerLoadEntry serverLoadEntry)
         {
-            ServerLoadData.Add("", new ServerLoadData());
+            ServerRecords.Add(serverName, new List<ServerLoadData>());
         }
     }
 
