@@ -15,6 +15,7 @@ namespace ServerTrack.WebApi.Tests
         [Test]
         public void ServerController_Post_Returns200OnSuccess()
         {
+            var serverName = "testServer";
             var serverLoadData = new ServerLoadEntry
             {
                 CpuLoad = 1,
@@ -23,9 +24,9 @@ namespace ServerTrack.WebApi.Tests
 
             var controller = new ServerController();
 
-            var response = controller.Post("testServer", serverLoadData);
+            var response = controller.Post(serverName, serverLoadData);
 
-            Assert.That(response.StatusCode, Is.EqualTo(200));
+            Assert.That((int)response.StatusCode, Is.EqualTo(200));
         }
     }
 }
