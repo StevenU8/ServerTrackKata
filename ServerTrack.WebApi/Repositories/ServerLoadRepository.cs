@@ -19,15 +19,29 @@ namespace ServerTrack.WebApi.Repositories
 
         public void Record(string serverName, ServerLoadEntry serverLoadEntry)
         {
-            ServerRecords.Add(serverName, new List<ServerLoadData>
+            List<ServerLoadData> serverLoadDataRecords;
+            var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
+            if (recordExists)
             {
-                new ServerLoadData
+                serverLoadDataRecords.Add(new ServerLoadData
                 {
                     CpuLoad = serverLoadEntry.CpuLoad,
                     RamLoad = serverLoadEntry.RamLoad,
                     RecordedDate = Clock.Now
-                }
-            });
+                });
+            }
+            else
+            {
+                ServerRecords.Add(serverName, new List<ServerLoadData>
+                {
+                    new ServerLoadData
+                    {
+                        CpuLoad = serverLoadEntry.CpuLoad,
+                        RamLoad = serverLoadEntry.RamLoad,
+                        RecordedDate = Clock.Now
+                    }
+                });
+            }
         }
     }
 }
