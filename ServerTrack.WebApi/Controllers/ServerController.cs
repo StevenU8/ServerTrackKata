@@ -8,14 +8,14 @@ using ServerTrack.WebApi.Models;
 
 namespace ServerTrack.WebApi.Controllers
 {
-    [RoutePrefix("api/server")]
+    [RoutePrefix("api/Server")]
     public class ServerController : ApiController
     {
         [HttpPost]
-        [Route("{serverName}")]
-        public void Post(string serverName, [FromBody]ServerLoadEntry serverLoadEntry)
+        [Route("{serverName}/LoadData")]
+        public HttpResponseMessage Post(string serverName, [FromBody]ServerLoadEntry serverLoadEntry)
         {
-            
+            return new HttpResponseMessage(HttpStatusCode.OK);
         }
     }
 }
