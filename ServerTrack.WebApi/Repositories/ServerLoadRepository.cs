@@ -22,7 +22,8 @@ namespace ServerTrack.WebApi.Repositories
             {
                 new ServerLoadData
                 {
-                    
+                    CpuLoad = serverLoadEntry.CpuLoad,
+                    RamLoad = serverLoadEntry.RamLoad
                 }
             });
         }
@@ -30,6 +31,7 @@ namespace ServerTrack.WebApi.Repositories
 
     public class ServerLoadData
     {
-
+        public double CpuLoad { get; set; }
+        public double RamLoad { get; set; }
     }
 }

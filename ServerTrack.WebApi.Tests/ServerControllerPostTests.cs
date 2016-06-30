@@ -37,21 +37,29 @@ namespace ServerTrack.WebApi.Tests
         [Test]
         public void ServerController_Post_SavesNewServerLoadDataEntry()
         {
-            var serverLoadData = new ServerLoadEntry();
+            var expectedCpuLoad = 1.00d;
+            var expectedRamLoad  = 2.00d;
+            var serverLoadData = new ServerLoadEntry
+            {
+                CpuLoad = expectedCpuLoad,
+                RamLoad = expectedRamLoad
+            };
 
             _controller.Post(ServerName, serverLoadData);
-            
+
             Assert.That(_serverLoadRepository.ServerRecords.Count(), Is.EqualTo(1));
 
-            var savedServerRecords = _serverLoadRepository.ServerRecords.First();
+            var savedServerRecords = _serverLoadRepository.ServerRecords.Single();
             Assert.That(savedServerRecords.Key, Is.EqualTo(ServerName));
 
             var serverLoadDataRecords = savedServerRecords.Value;
             Assert.That(serverLoadDataRecords.Count, Is.EqualTo(1));
 
+            var serverLoadDataRecord = serverLoadDataRecords.Single();
+
+            Assert.That(serverLoadDataRecord.CpuLoad, Is.EqualTo(expectedCpuLoad));
+            Assert.That(serverLoadDataRecord.RamLoad, Is.EqualTo(expectedRamLoad));
+
         }
-
-
- 
     }
 }
