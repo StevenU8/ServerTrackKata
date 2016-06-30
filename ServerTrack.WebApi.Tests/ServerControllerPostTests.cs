@@ -46,7 +46,8 @@ namespace ServerTrack.WebApi.Tests
             var savedServerRecords = _serverLoadRepository.ServerRecords.First();
             Assert.That(savedServerRecords.Key, Is.EqualTo(ServerName));
 
-
+            var serverLoadDataRecord = savedServerRecords.Value;
+            Assert.That(serverLoadDataRecord.Count, Is.EqualTo(1));
 
         }
 
