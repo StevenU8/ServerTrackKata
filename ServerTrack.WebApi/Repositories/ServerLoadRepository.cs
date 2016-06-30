@@ -9,7 +9,17 @@ namespace ServerTrack.WebApi.Repositories
 {
     public class ServerLoadRepository
     {
-        public ConcurrentDictionary<string, ServerLoadData> ServerLoadData { get; set; }
+        public Dictionary<string, ServerLoadData> ServerLoadData { get; set; }
+
+        public ServerLoadRepository()
+        {
+            ServerLoadData = new Dictionary<string, ServerLoadData>();
+        }
+
+        public void Record(ServerLoadEntry serverLoadEntry)
+        {
+            ServerLoadData.Add("", new ServerLoadData());
+        }
     }
 
     public class ServerLoadData

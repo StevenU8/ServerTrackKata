@@ -42,6 +42,10 @@ namespace ServerTrack.WebApi.Tests
             _controller.Post(ServerName, serverLoadData);
             
             Assert.That(_serverLoadRepository.ServerLoadData.Count(), Is.EqualTo(1));
+
+            var savedServerLoadDataEntry = _serverLoadRepository.ServerLoadData.First();
+            
+            Assert.That(savedServerLoadDataEntry.Key, Is.EqualTo(_serverLoadRepository));
         }
 
 
