@@ -24,22 +24,20 @@ namespace ServerTrack.WebApi.Repositories
             if (recordExists)
             {
                 serverLoadDataRecords.Add(new ServerLoadData
-                {
-                    CpuLoad = serverLoadEntry.CpuLoad,
-                    RamLoad = serverLoadEntry.RamLoad,
-                    RecordedDate = Clock.Now
-                });
+                (
+                    serverLoadEntry.CpuLoad,
+                    serverLoadEntry.RamLoad
+                ));
             }
             else
             {
                 ServerRecords.Add(serverName, new List<ServerLoadData>
                 {
                     new ServerLoadData
-                    {
-                        CpuLoad = serverLoadEntry.CpuLoad,
-                        RamLoad = serverLoadEntry.RamLoad,
-                        RecordedDate = Clock.Now
-                    }
+                    (
+                        serverLoadEntry.CpuLoad, 
+                        serverLoadEntry.RamLoad
+                    )
                 });
             }
         }

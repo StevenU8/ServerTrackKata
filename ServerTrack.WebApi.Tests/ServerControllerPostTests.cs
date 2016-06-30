@@ -64,8 +64,6 @@ namespace ServerTrack.WebApi.Tests
             
         }
 
-
-
         [Test]
         public void ServerController_Post_AppendsLoadDataEntry()
         {
@@ -97,7 +95,6 @@ namespace ServerTrack.WebApi.Tests
 
             var serverLoadDataRecords = savedServerRecords.Value;
             Assert.That(serverLoadDataRecords.Count, Is.EqualTo(2));
-
 
             Assert.That(serverLoadDataRecords[0].CpuLoad, Is.EqualTo(100d));
             Assert.That(serverLoadDataRecords[0].RamLoad, Is.EqualTo(200d));
