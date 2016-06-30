@@ -1,9 +1,9 @@
-﻿using System;
-using System.Collections.Concurrent;
+﻿using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using ServerTrack.WebApi.Models;
+using ServerTrack.WebApi.Repositories.DataModels;
 using ServerTrack.WebApi.Utilities;
 
 namespace ServerTrack.WebApi.Repositories
@@ -29,12 +29,5 @@ namespace ServerTrack.WebApi.Repositories
                 }
             });
         }
-    }
-
-    public class ServerLoadData
-    {
-        public double CpuLoad { get; set; }
-        public double RamLoad { get; set; }
-        public DateTime RecordedDate { get; set; }
     }
 }
