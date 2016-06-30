@@ -1,8 +1,10 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using NUnit.Framework;
 using ServerTrack.WebApi.Controllers;
 using ServerTrack.WebApi.Models;
 using ServerTrack.WebApi.Repositories;
+using ServerTrack.WebApi.Utilities;
 
 namespace ServerTrack.WebApi.Tests
 {
@@ -33,6 +35,9 @@ namespace ServerTrack.WebApi.Tests
         [Test]
         public void ServerController_Post_SavesNewServerLoadDataEntry()
         {
+            var expectedRecordedDate = DateTime.Now;
+            Clock.Freeze(expectedRecordedDate);
+
             var expectedCpuLoad = 1.00d;
             var expectedRamLoad  = 2.00d;
             var serverLoadData = new ServerLoadEntry
@@ -55,6 +60,8 @@ namespace ServerTrack.WebApi.Tests
 
             Assert.That(serverLoadDataRecord.CpuLoad, Is.EqualTo(expectedCpuLoad));
             Assert.That(serverLoadDataRecord.RamLoad, Is.EqualTo(expectedRamLoad));
+            Assert.That(serverLoadDataRecord.RecordedDate, Is.EqualTo(expectedRecordedDate));
+            
         }
     }
 }
