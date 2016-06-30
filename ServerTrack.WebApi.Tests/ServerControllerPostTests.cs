@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using NUnit.Framework;
 using ServerTrack.WebApi.Controllers;
 using ServerTrack.WebApi.Models;
+using ServerTrack.WebApi.Repositories;
 
 namespace ServerTrack.WebApi.Tests
 {
@@ -13,12 +14,14 @@ namespace ServerTrack.WebApi.Tests
     public class ServerControllerPostTests
     {
         private ServerController _controller;
+        private ServerLoadRepository _serverLoadRepository;
         private const string ServerName = "testServer";
 
         [SetUp]
         public void BeforeEachTest()
         {
-            _controller = new ServerController();
+            _serverLoadRepository = new ServerLoadRepository();
+            _controller = new ServerController(_serverLoadRepository);
         }
 
         [Test]
@@ -34,7 +37,14 @@ namespace ServerTrack.WebApi.Tests
         [Test]
         public void ServerController_Post_SavesNewServerLoadDataEntry()
         {
+            var serverLoadData = new ServerLoadEntry();
+
+            _controller.Post(ServerName, serverLoadData);
             
+            Assert.That(_serverLoadRepository.ServerLoadData.Count(), Is.EqualTo(1));
         }
+
+
+ 
     }
 }
