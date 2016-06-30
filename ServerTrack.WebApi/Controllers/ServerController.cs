@@ -37,5 +37,11 @@ namespace ServerTrack.WebApi.Controllers
 
             return new HttpResponseMessage(HttpStatusCode.OK);
         }
+
+        [HttpGet]
+        public HttpResponseMessage Get(string serverName)
+        {
+            return new HttpResponseMessage(HttpStatusCode.OK);
+        }
     }
 }
