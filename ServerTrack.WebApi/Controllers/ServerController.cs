@@ -28,6 +28,11 @@ namespace ServerTrack.WebApi.Controllers
         [Route("{serverName}/LoadData")]
         public HttpResponseMessage Post(string serverName, [FromBody]ServerLoadEntry serverLoadEntry)
         {
+            if (string.IsNullOrWhiteSpace(serverName))
+            {
+                return new HttpResponseMessage(HttpStatusCode.BadRequest);
+            }
+
             _serverLoadRepository.Record(serverName, serverLoadEntry);
 
             return new HttpResponseMessage(HttpStatusCode.OK);

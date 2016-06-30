@@ -34,6 +34,18 @@ namespace ServerTrack.WebApi.Tests
             Assert.That((int)response.StatusCode, Is.EqualTo(200));
         }
 
+        [TestCase("")]
+        [TestCase(" ")]
+        [TestCase(null)]
+        public void ServerController_Post_InvalidServerNameReturns400(string serverName)
+        {
+            var serverLoadData = new ServerLoadEntry();
+
+            var response = _controller.Post(serverName, serverLoadData);
+
+            Assert.That((int)response.StatusCode, Is.EqualTo(400));
+        }
+
         [Test]
         public void ServerController_Post_SavesNewServerLoadDataEntry()
         {
