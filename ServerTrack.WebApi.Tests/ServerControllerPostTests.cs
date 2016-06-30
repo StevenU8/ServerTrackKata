@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using ServerTrack.WebApi.Controllers;
 using ServerTrack.WebApi.Models;
 using ServerTrack.WebApi.Repositories;
+using ServerTrack.WebApi.Repositories.DataModels;
 using ServerTrack.WebApi.Utilities;
 
 namespace ServerTrack.WebApi.Tests
@@ -38,12 +40,10 @@ namespace ServerTrack.WebApi.Tests
             var expectedRecordedDate = DateTime.Now;
             Clock.Freeze(expectedRecordedDate);
 
-            var expectedCpuLoad = 1.00d;
-            var expectedRamLoad  = 2.00d;
             var serverLoadData = new ServerLoadEntry
             {
-                CpuLoad = expectedCpuLoad,
-                RamLoad = expectedRamLoad
+                CpuLoad = 1.00d,
+                RamLoad = 2.00d
             };
 
             _controller.Post(ServerName, serverLoadData);
@@ -58,10 +58,55 @@ namespace ServerTrack.WebApi.Tests
 
             var serverLoadDataRecord = serverLoadDataRecords.Single();
 
-            Assert.That(serverLoadDataRecord.CpuLoad, Is.EqualTo(expectedCpuLoad));
-            Assert.That(serverLoadDataRecord.RamLoad, Is.EqualTo(expectedRamLoad));
+            Assert.That(serverLoadDataRecord.CpuLoad, Is.EqualTo(1.00d));
+            Assert.That(serverLoadDataRecord.RamLoad, Is.EqualTo(2.00d));
             Assert.That(serverLoadDataRecord.RecordedDate, Is.EqualTo(expectedRecordedDate));
             
+        }
+
+
+
+        [Test]
+        public void ServerController_Post_AppendsLoadDataEntry()
+        {
+            var expectedRecordedDate = DateTime.Now;
+            Clock.Freeze(expectedRecordedDate);
+
+            _serverLoadRepository.ServerRecords.Add(ServerName, new List<ServerLoadData>
+            {
+                new ServerLoadData
+                {
+                    CpuLoad = 100d,
+                    RamLoad = 200d,
+                    RecordedDate = expectedRecordedDate
+                }
+            });
+
+            var serverLoadData = new ServerLoadEntry
+            {
+                CpuLoad = 1.00d,
+                RamLoad = 2.00d
+            };
+
+            _controller.Post(ServerName, serverLoadData);
+
+            Assert.That(_serverLoadRepository.ServerRecords.Count(), Is.EqualTo(1));
+
+            var savedServerRecords = _serverLoadRepository.ServerRecords.Single();
+            Assert.That(savedServerRecords.Key, Is.EqualTo(ServerName));
+
+            var serverLoadDataRecords = savedServerRecords.Value;
+            Assert.That(serverLoadDataRecords.Count, Is.EqualTo(2));
+
+
+            Assert.That(serverLoadDataRecords[0].CpuLoad, Is.EqualTo(100d));
+            Assert.That(serverLoadDataRecords[0].RamLoad, Is.EqualTo(200d));
+            Assert.That(serverLoadDataRecords[0].RecordedDate, Is.EqualTo(expectedRecordedDate));
+
+            Assert.That(serverLoadDataRecords[1].CpuLoad, Is.EqualTo(1.00d));
+            Assert.That(serverLoadDataRecords[1].RamLoad, Is.EqualTo(2.00d));
+            Assert.That(serverLoadDataRecords[1].RecordedDate, Is.EqualTo(expectedRecordedDate));
+
         }
     }
 }
