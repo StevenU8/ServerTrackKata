@@ -12,21 +12,29 @@ namespace ServerTrack.WebApi.Tests
     [TestFixture]
     public class ServerControllerPostTests
     {
+        private ServerController _controller;
+        private const string ServerName = "testServer";
+
+        [SetUp]
+        public void BeforeEachTest()
+        {
+            _controller = new ServerController();
+        }
+
         [Test]
         public void ServerController_Post_Returns200OnSuccess()
         {
-            var serverName = "testServer";
-            var serverLoadData = new ServerLoadEntry
-            {
-                CpuLoad = 1,
-                RamLoad = 2
-            };
+            var serverLoadData = new ServerLoadEntry();
 
-            var controller = new ServerController();
-
-            var response = controller.Post(serverName, serverLoadData);
+            var response = _controller.Post(ServerName, serverLoadData);
 
             Assert.That((int)response.StatusCode, Is.EqualTo(200));
+        }
+
+        [Test]
+        public void ServerController_Post_SavesNewServerLoadDataEntry()
+        {
+            
         }
     }
 }
