@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using NUnit.Framework;
 using ServerTrack.WebApi.Controllers;
 using ServerTrack.WebApi.Models;
@@ -59,7 +55,6 @@ namespace ServerTrack.WebApi.Tests
 
             Assert.That(serverLoadDataRecord.CpuLoad, Is.EqualTo(expectedCpuLoad));
             Assert.That(serverLoadDataRecord.RamLoad, Is.EqualTo(expectedRamLoad));
-
         }
     }
 }
