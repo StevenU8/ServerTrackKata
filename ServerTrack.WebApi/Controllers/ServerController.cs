@@ -14,19 +14,11 @@ namespace ServerTrack.WebApi.Controllers
     [RoutePrefix("api/Server")]
     public class ServerController : ApiController
     {
-        private static ServerLoadRepository _serverLoadRepository;
-
-        public ServerController() : this(new ServerLoadRepository())
-        {
-        }
+        private readonly ServerLoadRepository _serverLoadRepository;
 
         public ServerController(ServerLoadRepository serverLoadRepository)
         {
-            if (_serverLoadRepository == null)
-            {
-                _serverLoadRepository = serverLoadRepository;
-            }
-            
+            _serverLoadRepository = serverLoadRepository;
         }
 
         [HttpPost]
@@ -75,7 +67,7 @@ namespace ServerTrack.WebApi.Controllers
         public List<AverageLoad> AverageLoadsByHour { get; set; }
     }
 
-    public class AverageLoad    
+    public class AverageLoad
     {
         public DateTime RangeStart { get; set; }
         public DateTime RangeEnd { get; set; }
