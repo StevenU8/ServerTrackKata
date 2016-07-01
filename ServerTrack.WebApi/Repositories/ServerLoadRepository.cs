@@ -26,21 +26,13 @@ namespace ServerTrack.WebApi.Repositories
             var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
             if (recordExists)
             {
-                serverLoadDataRecords.Add(new ServerLoadData
-                (
-                    serverLoadEntry.CpuLoad,
-                    serverLoadEntry.RamLoad
-                ));
+                serverLoadDataRecords.Add(new ServerLoadData(serverLoadEntry));
             }
             else
             {
                 ServerRecords.Add(serverName, new List<ServerLoadData>
                 {
-                    new ServerLoadData
-                    (
-                        serverLoadEntry.CpuLoad, 
-                        serverLoadEntry.RamLoad
-                    )
+                    new ServerLoadData(serverLoadEntry)
                 });
             }
         }
