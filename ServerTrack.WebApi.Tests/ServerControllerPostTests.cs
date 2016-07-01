@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
@@ -82,7 +83,7 @@ namespace ServerTrack.WebApi.Tests
             var expectedRecordedDate = DateTime.Now;
             Clock.Freeze(expectedRecordedDate);
 
-            _serverLoadRepository.ServerRecords.Add(ServerName, new List<ServerLoadData>
+            _serverLoadRepository.ServerRecords.TryAdd(ServerName, new BlockingCollection<ServerLoadData>
             {
                 new ServerLoadData
                 {
@@ -105,7 +106,7 @@ namespace ServerTrack.WebApi.Tests
             var savedServerRecords = _serverLoadRepository.ServerRecords.Single();
             Assert.That(savedServerRecords.Key, Is.EqualTo(ServerName));
 
-            var serverLoadDataRecords = savedServerRecords.Value;
+            var serverLoadDataRecords = savedServerRecords.Value.ToList();
             Assert.That(serverLoadDataRecords.Count, Is.EqualTo(2));
 
             Assert.That(serverLoadDataRecords[0].CpuLoad, Is.EqualTo(100d));

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -11,33 +12,27 @@ namespace ServerTrack.WebApi.Repositories
 {
     public class ServerLoadRepository
     {
-        public Dictionary<string, List<ServerLoadData>> ServerRecords { get; set; }
+        public ConcurrentDictionary<string, BlockingCollection<ServerLoadData>> ServerRecords { get; set; }
 
         public ServerLoadRepository()
         {
-            ServerRecords = new Dictionary<string, List<ServerLoadData>>();
+            ServerRecords = new ConcurrentDictionary<string, BlockingCollection<ServerLoadData>>();
         }
 
         public void Record(string serverName, ServerLoadEntry serverLoadEntry)
         {
-            List<ServerLoadData> serverLoadDataRecords;
-            var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
-            if (recordExists)
-            {
-                serverLoadDataRecords.Add(new ServerLoadData(serverLoadEntry));
-            }
-            else
-            {
-                ServerRecords.Add(serverName, new List<ServerLoadData>
+            ServerRecords.AddOrUpdate(serverName,
+                s => new BlockingCollection<ServerLoadData> { new ServerLoadData(serverLoadEntry) },
+                (s, list) =>
                 {
-                    new ServerLoadData(serverLoadEntry)
+                    list.Add(new ServerLoadData(serverLoadEntry));
+                    return list;
                 });
-            }
         }
 
         public List<AverageLoad> GetAverageLoads(string serverName, LoadAverage loadAverageType)
         {
-            List<ServerLoadData> serverLoadDataRecords;
+            BlockingCollection<ServerLoadData> serverLoadDataRecords;
             var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
             if (!recordExists)
                 return null;

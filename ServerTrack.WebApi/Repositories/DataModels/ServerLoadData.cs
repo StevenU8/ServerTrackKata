@@ -15,6 +15,11 @@ namespace ServerTrack.WebApi.Repositories.DataModels
             RecordedDate = Clock.Now;
         }
 
+        public ServerLoadData()
+        {
+
+        }
+
 
         public double CpuLoad { get; set; }
         public double RamLoad { get; set; }

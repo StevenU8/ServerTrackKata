@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -30,7 +31,7 @@ namespace ServerTrack.WebApi.Tests
         [Test]
         public void ServerController_Get_Returns200OnSucess()
         {
-            _serverLoadRepository.ServerRecords.Add(ServerName, new List<ServerLoadData>());
+            _serverLoadRepository.ServerRecords.TryAdd(ServerName, new BlockingCollection<ServerLoadData>());
             var response = _controller.Get(ServerName);
 
             Assert.That((int)response.StatusCode, Is.EqualTo(200));
@@ -49,7 +50,7 @@ namespace ServerTrack.WebApi.Tests
         {
             var currentTime = new DateTime(2016, 6, 30, 2, 0, 0);
             Clock.Freeze(currentTime);
-            var serverLoadDatas = new List<ServerLoadData>
+            var serverLoadDatas = new BlockingCollection<ServerLoadData>
             {
                 new ServerLoadData
                 {
@@ -76,7 +77,7 @@ namespace ServerTrack.WebApi.Tests
                     RamLoad = 8,
                 },
             };
-            _serverLoadRepository.ServerRecords.Add(ServerName, serverLoadDatas);
+            _serverLoadRepository.ServerRecords.TryAdd(ServerName, serverLoadDatas);
             var response = _controller.Get(ServerName);
 
             var loadAverages = response.Content.ReadAsAsync<LoadAverages>().Result;
@@ -106,7 +107,7 @@ namespace ServerTrack.WebApi.Tests
         {
             var currentTime = new DateTime(2016, 6, 30, 18, 0, 0);
             Clock.Freeze(currentTime);
-            var serverLoadDatas = new List<ServerLoadData>
+            var serverLoadDatas = new BlockingCollection<ServerLoadData>
             {
                 new ServerLoadData
                 {
@@ -133,7 +134,7 @@ namespace ServerTrack.WebApi.Tests
                     RamLoad = 8,
                 },
             };
-            _serverLoadRepository.ServerRecords.Add(ServerName, serverLoadDatas);
+            _serverLoadRepository.ServerRecords.TryAdd(ServerName, serverLoadDatas);
             var response = _controller.Get(ServerName);
 
             var loadAverages = response.Content.ReadAsAsync<LoadAverages>().Result;

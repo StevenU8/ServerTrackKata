@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTrack.WebApi", "Serve
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTrack.WebApi.Tests", "ServerTrack.WebApi.Tests\ServerTrack.WebApi.Tests.csproj", "{4791D155-2FD4-42AD-A713-39779EA9C3F6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServerTrack.WebApi.SelfHost", "ServerTrack.WebApi.SelfHost\ServerTrack.WebApi.SelfHost.csproj", "{5D65CCEF-2498-4485-B141-E2B0F9DF3631}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{4791D155-2FD4-42AD-A713-39779EA9C3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4791D155-2FD4-42AD-A713-39779EA9C3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4791D155-2FD4-42AD-A713-39779EA9C3F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D65CCEF-2498-4485-B141-E2B0F9DF3631}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D65CCEF-2498-4485-B141-E2B0F9DF3631}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D65CCEF-2498-4485-B141-E2B0F9DF3631}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D65CCEF-2498-4485-B141-E2B0F9DF3631}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
