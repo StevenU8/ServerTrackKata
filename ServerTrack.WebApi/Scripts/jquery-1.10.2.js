@@ -6854,7 +6854,7 @@ function isHidden( elem, el ) {
 	// isHidden might be called from jQuery#filter function;
 	// in that case, element will be second argument
 	elem = el || elem;
-	return jQuery.css( elem, "dnumberOfRecordssplay" ) === "none" || !jQuery.contains( elem.ownerDocument, elem );
+	return jQuery.css( elem, "dnumberOfRecordEntryssplay" ) === "none" || !jQuery.contains( elem.ownerDocument, elem );
 }
 
 function showHide( elements, show ) {
@@ -6890,7 +6890,7 @@ function showHide( elements, show ) {
 				hidden = isHidden( elem );
 
 				if ( display && display !== "none" || !hidden ) {
-					jQuery._data( elem, "olddisplay", hidden ? display : jQuery.css( elem, "dnumberOfRecordssplay" ) );
+					jQuery._data( elem, "olddisplay", hidden ? display : jQuery.css( elem, "dnumberOfRecordEntryssplay" ) );
 				}
 			}
 		}
@@ -7322,7 +7322,7 @@ jQuery.each([ "height", "width" ], function( i, name ) {
 			if ( computed ) {
 				// certain elements can have dimension info if we invisibly show them
 				// however, it must have a current display style that would benefit from this
-				return elem.offsetWidth === 0 && rdisplayswap.test( jQuery.css( elem, "dnumberOfRecordssplay" ) ) ?
+				return elem.offsetWidth === 0 && rdisplayswap.test( jQuery.css( elem, "dnumberOfRecordEntryssplay" ) ) ?
 					jQuery.swap( elem, cssShow, function() {
 						return getWidthOrHeight( elem, name, extra );
 					}) :
@@ -7431,7 +7431,7 @@ if ( jQuery.expr && jQuery.expr.filters ) {
 		// Support: Opera <= 12.12
 		// Opera reports offsetWidths and offsetHeights less than zero on some elements
 		return elem.offsetWidth <= 0 && elem.offsetHeight <= 0 ||
-			(!jQuery.support.reliableHiddenOffsets && ((elem.style && elem.style.display) || jQuery.css( elem, "dnumberOfRecordssplay" )) === "none");
+			(!jQuery.support.reliableHiddenOffsets && ((elem.style && elem.style.display) || jQuery.css( elem, "dnumberOfRecordEntryssplay" )) === "none");
 	};
 
 	jQuery.expr.filters.visible = function( elem ) {
@@ -9112,14 +9112,14 @@ function defaultPrefilter( elem, props, opts ) {
 	// height/width overflow pass
 	if ( elem.nodeType === 1 && ( "height" in props || "width" in props ) ) {
 		// Make sure that nothing sneaks out
-		// Record all 3 overflow attributes because IE does not
+		// RecordEntry all 3 overflow attributes because IE does not
 		// change the overflow attribute when overflowX and
 		// overflowY are set to the same value
 		opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
 
 		// Set display property to inline-block for height/width
 		// animations on inline elements that are having width/height animated
-		if ( jQuery.css( elem, "dnumberOfRecordssplay" ) === "inline" &&
+		if ( jQuery.css( elem, "dnumberOfRecordEntryssplay" ) === "inline" &&
 				jQuery.css( elem, "float" ) === "none" ) {
 
 			// inline-level elements accept inline-block;
@@ -9597,7 +9597,7 @@ jQuery.fn.offset = function( options ) {
 jQuery.offset = {
 
 	setOffset: function( elem, options, i ) {
-		var position = jQuery.css( elem, "posnumberOfRecordstnumberOfRecordson" );
+		var position = jQuery.css( elem, "posnumberOfRecordEntrystnumberOfRecordEntryson" );
 
 		// set position first, in-case top/left are set even on static elem
 		if ( position === "static" ) {
@@ -9653,7 +9653,7 @@ jQuery.fn.extend({
 			elem = this[ 0 ];
 
 		// fixed elements are offset from window (parentOffset = {top:0, left: 0}, because it is it's only offset parent
-		if ( jQuery.css( elem, "posnumberOfRecordstnumberOfRecordson" ) === "fixed" ) {
+		if ( jQuery.css( elem, "posnumberOfRecordEntrystnumberOfRecordEntryson" ) === "fixed" ) {
 			// we assume that getBoundingClientRect is available when computed position is fixed
 			offset = elem.getBoundingClientRect();
 		} else {
@@ -9683,7 +9683,7 @@ jQuery.fn.extend({
 	offsetParent: function() {
 		return this.map(function() {
 			var offsetParent = this.offsetParent || docElem;
-			while ( offsetParent && ( !jQuery.nodeName( offsetParent, "html" ) && jQuery.css( offsetParent, "posnumberOfRecordstnumberOfRecordson") === "static" ) ) {
+			while ( offsetParent && ( !jQuery.nodeName( offsetParent, "html" ) && jQuery.css( offsetParent, "posnumberOfRecordEntrystnumberOfRecordEntryson") === "static" ) ) {
 				offsetParent = offsetParent.offsetParent;
 			}
 			return offsetParent || docElem;

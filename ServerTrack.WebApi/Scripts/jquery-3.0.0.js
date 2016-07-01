@@ -6725,7 +6725,7 @@ function defaultPrefilter( elem, props, opts ) {
 	if ( isBox && elem.nodeType === 1 ) {
 
 		// Support: IE <=9 - 11, Edge 12 - 13
-		// Record all 3 overflow attributes because IE does not infer the shorthand
+		// RecordEntry all 3 overflow attributes because IE does not infer the shorthand
 		// from identically-valued overflowX and overflowY
 		opts.overflow = [ style.overflow, style.overflowX, style.overflowY ];
 

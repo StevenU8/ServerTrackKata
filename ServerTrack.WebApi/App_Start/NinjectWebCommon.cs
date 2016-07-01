@@ -55,9 +55,7 @@ namespace ServerTrack.WebApi
         /// <param name="kernel">The kernel.</param>
         private static void RegisterServices(IKernel kernel)
         {
-            kernel.Bind<ServerLoadRepository>()
-                .ToConstant(new ServerLoadRepository())
-                .InSingletonScope();
+            Utilities.Bootstrapper.Configure(kernel);
         }        
     }
 }
