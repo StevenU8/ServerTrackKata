@@ -14,16 +14,19 @@ namespace ServerTrack.WebApi.Controllers
     [RoutePrefix("api/Server")]
     public class ServerController : ApiController
     {
-        private ServerLoadRepository _serverLoadRepository;
+        private static ServerLoadRepository _serverLoadRepository;
 
         public ServerController() : this(new ServerLoadRepository())
         {
-            
         }
 
         public ServerController(ServerLoadRepository serverLoadRepository)
         {
-            this._serverLoadRepository = serverLoadRepository;
+            if (_serverLoadRepository == null)
+            {
+                _serverLoadRepository = serverLoadRepository;
+            }
+            
         }
 
         [HttpPost]
@@ -41,6 +44,7 @@ namespace ServerTrack.WebApi.Controllers
         }
 
         [HttpGet]
+        [Route("{serverName}/LoadData")]
         public HttpResponseMessage Get(string serverName)
         {
             var lastHourAverages = _serverLoadRepository.GetAverageLoads(serverName, LoadAverage.Minutes);

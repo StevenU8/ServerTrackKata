@@ -56,8 +56,21 @@ namespace ServerTrack.WebApi.Repositories
             for (int i = 1; i < (int)loadAverageType + 1; i++)
             {
                 var timeframeEnd = currentTime.AddSeconds(-1);
-                var timeframeStart = currentTime.AddMinutes(-1);
-                currentTime = currentTime.AddMinutes(-1);
+
+                DateTime timeframeStart;
+                switch (loadAverageType)
+                {
+                    case (LoadAverage.Minutes):
+                        timeframeStart = currentTime.AddMinutes(-1);
+                        currentTime = currentTime.AddMinutes(-1);
+                        break;
+                    case (LoadAverage.Hours):
+                        timeframeStart = currentTime.AddHours(-1);
+                        currentTime = currentTime.AddHours(-1);
+                        break;
+                    default:
+                        throw new Exception();
+                }
 
                 var relevantRecordsInTimeFrame = serverLoadDataRecords
                     .Where(l => l.RecordedDate >= timeframeStart && l.RecordedDate <= timeframeEnd)
