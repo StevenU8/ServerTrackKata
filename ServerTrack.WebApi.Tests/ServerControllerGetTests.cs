@@ -9,6 +9,7 @@ using ServerTrack.WebApi.Controllers;
 using ServerTrack.WebApi.Models;
 using ServerTrack.WebApi.Repositories;
 using ServerTrack.WebApi.Repositories.DataModels;
+using ServerTrack.WebApi.Utilities;
 
 namespace ServerTrack.WebApi.Tests
 {
@@ -47,7 +48,36 @@ namespace ServerTrack.WebApi.Tests
         [Test]
         public void ServerController_Get_ReturnsAveragesOverLast60Minutes()
         {
-            _serverLoadRepository.ServerRecords.Add(ServerName, new List<ServerLoadData>());
+            var currentTime = new DateTime(2016, 6, 30, 2, 0, 0);
+            Clock.Freeze(currentTime);
+            var serverLoadDatas = new List<ServerLoadData>
+            {
+                new ServerLoadData
+                {
+                    RecordedDate = currentTime.AddMinutes(-1),
+                    CpuLoad = 1,
+                    RamLoad = 2,
+                },
+                new ServerLoadData
+                {
+                    RecordedDate = currentTime.AddMinutes(-1),
+                    CpuLoad = 3,
+                    RamLoad = 4,
+                },
+                new ServerLoadData
+                {
+                    RecordedDate = currentTime.AddMinutes(-40),
+                    CpuLoad = 5,
+                    RamLoad = 6,
+                },
+                new ServerLoadData
+                {
+                    RecordedDate = currentTime.AddMinutes(-40),
+                    CpuLoad = 7,
+                    RamLoad = 8,
+                },
+            };
+            _serverLoadRepository.ServerRecords.Add(ServerName, serverLoadDatas);
             var response = _controller.Get(ServerName);
 
             var loadAverages = response.Content.ReadAsAsync<LoadAverages>().Result;
@@ -56,6 +86,20 @@ namespace ServerTrack.WebApi.Tests
 
             var averageLoadsByMinute = loadAverages.AverageLoadsByMinute;
             Assert.That(averageLoadsByMinute.Count, Is.EqualTo(60));
+            Assert.That(averageLoadsByMinute[0].RangeStart, Is.EqualTo(new DateTime(2016, 6, 30, 1, 59, 0)));
+            Assert.That(averageLoadsByMinute[0].RangeEnd, Is.EqualTo(new DateTime(2016, 6, 30, 1, 59, 59)));
+            Assert.That(averageLoadsByMinute[0].AverageCpuLoad, Is.EqualTo(2));
+            Assert.That(averageLoadsByMinute[0].AverageRamLoad, Is.EqualTo(3));
+            
+            Assert.That(averageLoadsByMinute[1].RangeStart, Is.EqualTo(new DateTime(2016, 6, 30, 1, 58, 0)));
+            Assert.That(averageLoadsByMinute[1].RangeEnd, Is.EqualTo(new DateTime(2016, 6, 30, 1, 58, 59)));
+            Assert.That(averageLoadsByMinute[1].AverageCpuLoad, Is.EqualTo(0));
+            Assert.That(averageLoadsByMinute[1].AverageRamLoad, Is.EqualTo(0));
+
+            Assert.That(averageLoadsByMinute[39].RangeStart, Is.EqualTo(new DateTime(2016, 6, 30, 1, 20, 0)));
+            Assert.That(averageLoadsByMinute[39].RangeEnd, Is.EqualTo(new DateTime(2016, 6, 30, 1, 20, 59)));
+            Assert.That(averageLoadsByMinute[39].AverageCpuLoad, Is.EqualTo(6));
+            Assert.That(averageLoadsByMinute[39].AverageRamLoad, Is.EqualTo(7));
         }
 
         [Test]

@@ -1,4 +1,5 @@
-﻿using System.Collections.Concurrent;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -48,13 +49,35 @@ namespace ServerTrack.WebApi.Repositories
             List<ServerLoadData> serverLoadDataRecords;
             var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
             if (!recordExists)
-            {
                 return null;
-            }
+
+            var currentTime = Clock.Now.AddSeconds(-Clock.Now.Second);
             var averageLoads = new List<AverageLoad>();
-            for (int i = 0; i < numberOfRecords; i++)
+            for (int i = 1; i < numberOfRecords + 1; i++)
             {
-                averageLoads.Add(new AverageLoad());
+                var timeframeEnd = currentTime.AddSeconds(-1);
+                var timeframeStart = currentTime.AddMinutes(-1);
+                currentTime = currentTime.AddMinutes(-1);
+
+                var relevantRecordsInTimeFrame = serverLoadDataRecords
+                    .Where(l => l.RecordedDate >= timeframeStart && l.RecordedDate <= timeframeEnd)
+                    .ToList();
+
+                var relevantCpuLoads = relevantRecordsInTimeFrame
+                    .Select(r => r.CpuLoad)
+                    .ToList();
+
+                var relevantRamLoads = relevantRecordsInTimeFrame
+                    .Select(r => r.RamLoad)
+                    .ToList();
+
+                averageLoads.Add(new AverageLoad
+                {
+                    RangeStart = timeframeStart,
+                    RangeEnd = timeframeEnd,
+                    AverageCpuLoad = relevantCpuLoads.Any() ? relevantCpuLoads.Average() : 0,
+                    AverageRamLoad = relevantRamLoads.Any() ? relevantRamLoads.Average() : 0
+                });
             }
             return averageLoads;
         }

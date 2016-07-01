@@ -49,15 +49,17 @@ namespace ServerTrack.WebApi.Controllers
                 return new HttpResponseMessage(HttpStatusCode.NotFound);
 
             var lastDayAverages = _serverLoadRepository.GetAverageLoads(serverName, LoadAverage.Hours, 24);
-
             var loadAverages = new LoadAverages
             {
                 AverageLoadsByHour = lastDayAverages,
                 AverageLoadsByMinute = lastHourAverages
             };
 
-            var response = new HttpResponseMessage(HttpStatusCode.OK);
-            response.Content = new ObjectContent<LoadAverages>(loadAverages,new JsonMediaTypeFormatter(),  "application/json");
+            var content = new ObjectContent<LoadAverages>(loadAverages, new JsonMediaTypeFormatter(), "application/json");
+            var response = new HttpResponseMessage(HttpStatusCode.OK)
+            {
+                Content = content
+            };
 
             return response;
         }
@@ -71,6 +73,10 @@ namespace ServerTrack.WebApi.Controllers
 
     public class AverageLoad    
     {
+        public DateTime RangeStart { get; set; }
+        public DateTime RangeEnd { get; set; }
+        public double AverageCpuLoad { get; set; }
+        public double AverageRamLoad { get; set; }
     }
 
     public enum LoadAverage
