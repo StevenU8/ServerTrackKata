@@ -44,7 +44,6 @@ namespace ServerTrack.WebApi.Tests
             Assert.That((int)response.StatusCode, Is.EqualTo(404));
         }
 
-
         [Test]
         public void ServerController_Get_ReturnsAveragesOverLast60Minutes()
         {

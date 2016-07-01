@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Web;
 using ServerTrack.WebApi.Controllers;
@@ -54,21 +55,10 @@ namespace ServerTrack.WebApi.Repositories
             var currentTime = Clock.Now;
             var timeframeStart = currentTime.AddSeconds(-currentTime.Second);
             var averageLoads = new List<AverageLoad>();
-            for (int i = 1; i < (int)loadAverageType + 1; i++)
+            for (var i = 1; i < (int)loadAverageType + 1; i++)
             {
                 var timeframeEnd = timeframeStart.AddSeconds(-1);
-
-                switch (loadAverageType)
-                {
-                    case (LoadAverage.Minutes):
-                        timeframeStart = timeframeStart.AddMinutes(-1);
-                        break;
-                    case (LoadAverage.Hours):
-                        timeframeStart = timeframeStart.AddHours(-1);
-                        break;
-                    default:
-                        throw new Exception();
-                }
+                timeframeStart = GetUpdatedTimeFrameStart(loadAverageType, timeframeStart);
 
                 var relevantRecordsInTimeFrame = serverLoadDataRecords
                     .Where(l => l.RecordedDate >= timeframeStart && l.RecordedDate <= timeframeEnd)
@@ -92,6 +82,18 @@ namespace ServerTrack.WebApi.Repositories
             }
             return averageLoads;
         }
-    }
 
+        private static DateTime GetUpdatedTimeFrameStart(LoadAverage loadAverageType, DateTime timeframeStart)
+        {
+            switch (loadAverageType)
+            {
+                case (LoadAverage.Minutes):
+                    return timeframeStart.AddMinutes(-1);
+                case (LoadAverage.Hours):
+                    return timeframeStart.AddHours(-1);
+                default:
+                    throw new InvalidEnumArgumentException();
+            }
+        }
+    }
 }
