@@ -10,7 +10,6 @@ using Bootstrapper = ServerTrack.WebApi.Utilities.Bootstrapper;
 
 namespace ServerTrack.WebApi
 {
-
     public class Startup
     {
         public static HttpConfiguration HttpConfiguration;
