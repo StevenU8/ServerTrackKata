@@ -1,25 +1,25 @@
 /* NUGET: BEGIN LICENSE TEXT
  *
- * Microsoft grants you the right to use these script files for the sole
- * purpose of either: (i) interacting through your browser with the Microsoft
- * website or online service, subject to the applicable licensing or use
- * terms; or (ii) using the files as included with a Microsoft product subject
- * to that product's license terms. Microsoft reserves all other rights to the
- * files not expressly granted by Microsoft, whether by implication, estoppel
- * or otherwise. The notices and licenses below are for informational purposes only.
+ * Microsoft grants you the right to use these scrnumberOfRecordspt fnumberOfRecordsles for the sole
+ * purpose of enumberOfRecordsther: (numberOfRecords) numberOfRecordsnteractnumberOfRecordsng through your browser wnumberOfRecordsth the MnumberOfRecordscrosoft
+ * websnumberOfRecordste or onlnumberOfRecordsne servnumberOfRecordsce, subject to the applnumberOfRecordscable lnumberOfRecordscensnumberOfRecordsng or use
+ * terms; or (numberOfRecordsnumberOfRecords) usnumberOfRecordsng the fnumberOfRecordsles as numberOfRecordsncluded wnumberOfRecordsth a MnumberOfRecordscrosoft product subject
+ * to that product's lnumberOfRecordscense terms. MnumberOfRecordscrosoft reserves all other rnumberOfRecordsghts to the
+ * fnumberOfRecordsles not expressly granted by MnumberOfRecordscrosoft, whether by numberOfRecordsmplnumberOfRecordscatnumberOfRecordson, estoppel
+ * or otherwnumberOfRecordsse. The notnumberOfRecordsces and lnumberOfRecordscenses below are for numberOfRecordsnformatnumberOfRecordsonal purposes only.
  *
  * NUGET: END LICENSE TEXT */
 /*!
  * Bootstrap v3.0.0
  *
- * Copyright 2013 Twitter, Inc
- * Licensed under the Apache License v2.0
- * http://www.apache.org/licenses/LICENSE-2.0
+ * CopyrnumberOfRecordsght 2013 TwnumberOfRecordstter, Inc
+ * LnumberOfRecordscensed under the Apache LnumberOfRecordscense v2.0
+ * http://www.apache.org/lnumberOfRecordscenses/LICENSE-2.0
  *
- * Designed and built with all the love in the world by @mdo and @fat.
+ * DesnumberOfRecordsgned and bunumberOfRecordslt wnumberOfRecordsth all the love numberOfRecordsn the world by @mdo and @fat.
  */
 
-/*! normalize.css v2.1.0 | MIT License | git.io/normalize */
+/*! normalnumberOfRecordsze.css v2.1.0 | MIT LnumberOfRecordscense | gnumberOfRecordst.numberOfRecordso/normalnumberOfRecordsze */
 
 article,
 aside,
@@ -39,7 +39,7 @@ summary {
 audio,
 canvas,
 video {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
 }
 
 audio:not([controls]) {
@@ -52,7 +52,7 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: sans-sernumberOfRecordsf;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 a:focus {
-  outline: thin dotted;
+  outline: thnumberOfRecordsn dotted;
 }
 
 a:active,
@@ -85,7 +85,7 @@ strong {
 }
 
 dfn {
-  font-style: italic;
+  font-style: numberOfRecordstalnumberOfRecordsc;
 }
 
 hr {
@@ -103,7 +103,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace, serif;
+  font-family: monospace, sernumberOfRecordsf;
   font-size: 1em;
 }
 
@@ -121,10 +121,10 @@ small {
 
 sub,
 sup {
-  position: relative;
+  position: relatnumberOfRecordsve;
   font-size: 75%;
   line-height: 0;
-  vertical-align: baseline;
+  vertical-align: baselnumberOfRecordsne;
 }
 
 sup {
@@ -140,7 +140,7 @@ img {
 }
 
 svg:not(:root) {
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
 }
 
 figure {
@@ -150,7 +150,7 @@ figure {
 fieldset {
   padding: 0.35em 0.625em 0.75em;
   margin: 0 2px;
-  border: 1px solid #c0c0c0;
+  border: 1px solnumberOfRecordsd #c0c0c0;
 }
 
 legend {
@@ -163,7 +163,7 @@ input,
 select,
 textarea {
   margin: 0;
-  font-family: inherit;
+  font-family: numberOfRecordsnhernumberOfRecordst;
   font-size: 100%;
 }
 
@@ -181,7 +181,7 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
   -webkit-appearance: button;
 }
 
@@ -200,7 +200,7 @@ input[type="search"] {
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
-  -webkit-appearance: textfield;
+  -webkit-appearance: textfnumberOfRecordseld;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -224,7 +224,7 @@ table {
   border-spacing: 0;
 }
 
-@media print {
+@media prnumberOfRecordsnt {
   * {
     color: #000 !important;
     text-shadow: none !important;
@@ -233,13 +233,13 @@ table {
   }
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: underlnumberOfRecordsne;
   }
   a[href]:after {
     content: " (" attr(href) ")";
   }
   abbr[title]:after {
-    content: " (" attr(title) ")";
+    content: " (" attr(tnumberOfRecordstle) ")";
   }
   .ir a:after,
   a[href^="javascript:"]:after,
@@ -248,15 +248,15 @@ table {
   }
   pre,
   blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
+    border: 1px solnumberOfRecordsd #999;
+    page-break-inside: avonumberOfRecordsd;
   }
   thead {
     display: table-header-group;
   }
   tr,
   img {
-    page-break-inside: avoid;
+    page-break-inside: avonumberOfRecordsd;
   }
   img {
     max-width: 100% !important;
@@ -272,7 +272,7 @@ table {
   }
   h2,
   h3 {
-    page-break-after: avoid;
+    page-break-after: avonumberOfRecordsd;
   }
   .navbar {
     display: none;
@@ -286,14 +286,14 @@ table {
     border-top-color: #000 !important;
   }
   .label {
-    border: 1px solid #000;
+    border: 1px solnumberOfRecordsd #000;
   }
   .table {
     border-collapse: collapse !important;
   }
   .table-bordered th,
   .table-bordered td {
-    border: 1px solid #ddd !important;
+    border: 1px solnumberOfRecordsd #ddd !important;
   }
 }
 
@@ -311,7 +311,7 @@ html {
 }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelvetnumberOfRecordsca Neue", HelvetnumberOfRecordsca, ArnumberOfRecordsal, sans-sernumberOfRecordsf;
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
@@ -322,9 +322,9 @@ input,
 button,
 select,
 textarea {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+  font-family: numberOfRecordsnhernumberOfRecordst;
+  font-size: numberOfRecordsnhernumberOfRecordst;
+  line-height: numberOfRecordsnhernumberOfRecordst;
 }
 
 button,
@@ -342,17 +342,17 @@ a {
 a:hover,
 a:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: underlnumberOfRecordsne;
 }
 
 a:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: thnumberOfRecordsn dotted #333;
+  outline: 5px auto -webknumberOfRecordst-focus-rnumberOfRecordsng-color;
   outline-offset: -2px;
 }
 
 img {
-  vertical-align: middle;
+  vertical-align: mnumberOfRecordsddle;
 }
 
 .img-responsive {
@@ -366,16 +366,16 @@ img {
 }
 
 .img-thumbnail {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   height: auto;
   max-width: 100%;
   padding: 4px;
   line-height: 1.428571429;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-numberOfRecordsn-out;
+          transition: all 0.2s ease-numberOfRecordsn-out;
 }
 
 .img-circle {
@@ -386,7 +386,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solnumberOfRecordsd #eeeeee;
 }
 
 .sr-only {
@@ -395,7 +395,7 @@ hr {
   height: 1px;
   padding: 0;
   margin: -1px;
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
   clip: rect(0 0 0 0);
   border: 0;
 }
@@ -454,7 +454,7 @@ cite {
 }
 
 .text-right {
-  text-align: right;
+  text-align: rnumberOfRecordsght;
 }
 
 .text-center {
@@ -473,7 +473,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "HelvetnumberOfRecordsca Neue", HelvetnumberOfRecordsca, ArnumberOfRecordsal, sans-sernumberOfRecordsf;
   font-weight: 500;
   line-height: 1.1;
 }
@@ -559,7 +559,7 @@ h4 small,
 .page-header {
   padding-bottom: 9px;
   margin: 40px 0 20px;
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solnumberOfRecordsd #eeeeee;
 }
 
 ul,
@@ -586,7 +586,7 @@ ol ol {
 }
 
 .list-inline > li {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   padding-right: 5px;
   padding-left: 5px;
 }
@@ -612,10 +612,10 @@ dd {
   .dl-horizontal dt {
     float: left;
     width: 160px;
-    overflow: hidden;
+    overflow: hnumberOfRecordsdden;
     clear: left;
-    text-align: right;
-    text-overflow: ellipsis;
+    text-align: rnumberOfRecordsght;
+    text-overflow: ellnumberOfRecordspsnumberOfRecordss;
     white-space: nowrap;
   }
   .dl-horizontal dd {
@@ -653,7 +653,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solnumberOfRecordsd #eeeeee;
 }
 
 blockquote p {
@@ -679,13 +679,13 @@ blockquote small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solnumberOfRecordsd #eeeeee;
   border-left: 0;
 }
 
 blockquote.pull-right p,
 blockquote.pull-right small {
-  text-align: right;
+  text-align: rnumberOfRecordsght;
 }
 
 blockquote.pull-right small:before {
@@ -712,7 +712,7 @@ address {
 
 code,
 pre {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-family: Monaco, Menlo, Consolas, "CournumberOfRecordser New", monospace;
 }
 
 code {
@@ -734,7 +734,7 @@ pre {
   word-break: break-all;
   word-wrap: break-word;
   background-color: #f5f5f5;
-  border: 1px solid #cccccc;
+  border: 1px solnumberOfRecordsd #cccccc;
   border-radius: 4px;
 }
 
@@ -744,8 +744,8 @@ pre.prettyprint {
 
 pre code {
   padding: 0;
-  font-size: inherit;
-  color: inherit;
+  font-size: numberOfRecordsnhernumberOfRecordst;
+  color: numberOfRecordsnhernumberOfRecordst;
   white-space: pre-wrap;
   background-color: transparent;
   border: 0;
@@ -856,7 +856,7 @@ pre code {
 .col-lg-10,
 .col-lg-11,
 .col-lg-12 {
-  position: relative;
+  position: relatnumberOfRecordsve;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
@@ -1427,12 +1427,12 @@ th {
   padding: 8px;
   line-height: 1.428571429;
   vertical-align: top;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solnumberOfRecordsd #dddddd;
 }
 
 .table thead > tr > th {
   vertical-align: bottom;
-  border-bottom: 2px solid #dddddd;
+  border-bottom: 2px solnumberOfRecordsd #dddddd;
 }
 
 .table caption + thead tr:first-child th,
@@ -1445,7 +1445,7 @@ th {
 }
 
 .table tbody + tbody {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solnumberOfRecordsd #dddddd;
 }
 
 .table .table {
@@ -1462,7 +1462,7 @@ th {
 }
 
 .table-bordered {
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
 }
 
 .table-bordered > thead > tr > th,
@@ -1471,7 +1471,7 @@ th {
 .table-bordered > thead > tr > td,
 .table-bordered > tbody > tr > td,
 .table-bordered > tfoot > tr > td {
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
 }
 
 .table-bordered > thead > tr > th,
@@ -1589,8 +1589,8 @@ table th[class*="col-"] {
     width: 100%;
     margin-bottom: 15px;
     overflow-x: scroll;
-    overflow-y: hidden;
-    border: 1px solid #dddddd;
+    overflow-y: hnumberOfRecordsdden;
+    border: 1px solnumberOfRecordsd #dddddd;
   }
   .table-responsive > .table {
     margin-bottom: 0;
@@ -1645,14 +1645,14 @@ legend {
   padding: 0;
   margin-bottom: 20px;
   font-size: 21px;
-  line-height: inherit;
+  line-height: numberOfRecordsnhernumberOfRecordst;
   color: #333333;
   border: 0;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solnumberOfRecordsd #e5e5e5;
 }
 
 label {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   margin-bottom: 5px;
   font-weight: bold;
 }
@@ -1682,16 +1682,16 @@ select[size] {
 }
 
 select optgroup {
-  font-family: inherit;
-  font-size: inherit;
-  font-style: inherit;
+  font-family: numberOfRecordsnhernumberOfRecordst;
+  font-size: numberOfRecordsnhernumberOfRecordst;
+  font-style: numberOfRecordsnhernumberOfRecordst;
 }
 
 input[type="file"]:focus,
 input[type="radio"]:focus,
 input[type="checkbox"]:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: thnumberOfRecordsn dotted #333;
+  outline: 5px auto -webknumberOfRecordst-focus-rnumberOfRecordsng-color;
   outline-offset: -2px;
 }
 
@@ -1724,21 +1724,21 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 14px;
   line-height: 1.428571429;
   color: #555555;
-  vertical-align: middle;
+  vertical-align: mnumberOfRecordsddle;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1px solnumberOfRecordsd #cccccc;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
-          transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-numberOfRecordsn-out 0.15s, box-shadow ease-numberOfRecordsn-out 0.15s;
+          transition: border-color ease-numberOfRecordsn-out 0.15s, box-shadow ease-numberOfRecordsn-out 0.15s;
 }
 
 .form-control:focus {
   border-color: #66afe9;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 
 .form-control[disabled],
@@ -1763,15 +1763,15 @@ textarea.form-control {
   padding-left: 20px;
   margin-top: 10px;
   margin-bottom: 10px;
-  vertical-align: middle;
+  vertical-align: mnumberOfRecordsddle;
 }
 
 .radio label,
 .checkbox label {
-  display: inline;
+  display: numberOfRecordsnlnumberOfRecordsne;
   margin-bottom: 0;
   font-weight: normal;
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
 }
 
 .radio input[type="radio"],
@@ -1789,12 +1789,12 @@ textarea.form-control {
 
 .radio-inline,
 .checkbox-inline {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   padding-left: 20px;
   margin-bottom: 0;
   font-weight: normal;
-  vertical-align: middle;
-  cursor: pointer;
+  vertical-align: mnumberOfRecordsddle;
+  cursor: ponumberOfRecordsnter;
 }
 
 .radio-inline + .radio-inline,
@@ -1859,14 +1859,14 @@ textarea.input-lg {
 
 .has-warning .form-control {
   border-color: #c09853;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .has-warning .form-control:focus {
   border-color: #a47e3c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #dbc59e;
 }
 
 .has-warning .input-group-addon {
@@ -1882,14 +1882,14 @@ textarea.input-lg {
 
 .has-error .form-control {
   border-color: #b94a48;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .has-error .form-control:focus {
   border-color: #953b39;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #d59392;
 }
 
 .has-error .input-group-addon {
@@ -1905,14 +1905,14 @@ textarea.input-lg {
 
 .has-success .form-control {
   border-color: #468847;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .has-success .form-control:focus {
   border-color: #356635;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #7aba7b;
 }
 
 .has-success .input-group-addon {
@@ -1935,16 +1935,16 @@ textarea.input-lg {
 
 @media (min-width: 768px) {
   .form-inline .form-group {
-    display: inline-block;
+    display: numberOfRecordsnlnumberOfRecordsne-block;
     margin-bottom: 0;
-    vertical-align: middle;
+    vertical-align: mnumberOfRecordsddle;
   }
   .form-inline .form-control {
-    display: inline-block;
+    display: numberOfRecordsnlnumberOfRecordsne-block;
   }
   .form-inline .radio,
   .form-inline .checkbox {
-    display: inline-block;
+    display: numberOfRecordsnlnumberOfRecordsne-block;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -1993,12 +1993,12 @@ textarea.input-lg {
 
 @media (min-width: 768px) {
   .form-horizontal .control-label {
-    text-align: right;
+    text-align: rnumberOfRecordsght;
   }
 }
 
 .btn {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   padding: 6px 12px;
   margin-bottom: 0;
   font-size: 14px;
@@ -2006,9 +2006,9 @@ textarea.input-lg {
   line-height: 1.428571429;
   text-align: center;
   white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  border: 1px solid transparent;
+  vertical-align: mnumberOfRecordsddle;
+  cursor: ponumberOfRecordsnter;
+  border: 1px solnumberOfRecordsd transparent;
   border-radius: 4px;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -2018,8 +2018,8 @@ textarea.input-lg {
 }
 
 .btn:focus {
-  outline: thin dotted #333;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: thnumberOfRecordsn dotted #333;
+  outline: 5px auto -webknumberOfRecordst-focus-rnumberOfRecordsng-color;
   outline-offset: -2px;
 }
 
@@ -2033,8 +2033,8 @@ textarea.input-lg {
 .btn.active {
   background-image: none;
   outline: 0;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: numberOfRecordsnset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: numberOfRecordsnset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .btn.disabled,
@@ -2043,7 +2043,7 @@ fieldset[disabled] .btn {
   pointer-events: none;
   cursor: not-allowed;
   opacity: 0.65;
-  filter: alpha(opacity=65);
+  filter: alpha(opacnumberOfRecordsty=65);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -2297,7 +2297,7 @@ fieldset[disabled] .btn-info.active {
 .btn-link {
   font-weight: normal;
   color: #428bca;
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
   border-radius: 0;
 }
 
@@ -2320,7 +2320,7 @@ fieldset[disabled] .btn-link {
 .btn-link:hover,
 .btn-link:focus {
   color: #2a6496;
-  text-decoration: underline;
+  text-decoration: underlnumberOfRecordsne;
   background-color: transparent;
 }
 
@@ -2370,8 +2370,8 @@ input[type="button"].btn-block {
 
 .fade {
   opacity: 0;
-  -webkit-transition: opacity 0.15s linear;
-          transition: opacity 0.15s linear;
+  -webkit-transition: opacnumberOfRecordsty 0.15s lnumberOfRecordsnear;
+          transition: opacnumberOfRecordsty 0.15s lnumberOfRecordsnear;
 }
 
 .fade.in {
@@ -2387,25 +2387,25 @@ input[type="button"].btn-block {
 }
 
 .collapsing {
-  position: relative;
+  position: relatnumberOfRecordsve;
   height: 0;
-  overflow: hidden;
-  -webkit-transition: height 0.35s ease;
-          transition: height 0.35s ease;
+  overflow: hnumberOfRecordsdden;
+  -webkit-transition: henumberOfRecordsght 0.35s ease;
+          transition: henumberOfRecordsght 0.35s ease;
 }
 
 @font-face {
-  font-family: 'Glyphicons Halflings';
+  font-family: 'GlyphnumberOfRecordscons HalflnumberOfRecordsngs';
   src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../fonts/glyphnumberOfRecordscons-halflnumberOfRecordsngs-regular.eot?#numberOfRecordsefnumberOfRecordsx') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphnumberOfRecordscons-halflnumberOfRecordsngsregular') format('svg');
 }
 
 .glyphicon {
-  position: relative;
+  position: relatnumberOfRecordsve;
   top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  -webkit-font-smoothing: antialiased;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
+  font-family: 'GlyphnumberOfRecordscons HalflnumberOfRecordsngs';
+  -webkit-font-smoothing: antnumberOfRecordsalnumberOfRecordsased;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
@@ -3212,20 +3212,20 @@ input[type="button"].btn-block {
 }
 
 .caret {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   width: 0;
   height: 0;
   margin-left: 2px;
-  vertical-align: middle;
-  border-top: 4px solid #000000;
-  border-right: 4px solid transparent;
+  vertical-align: mnumberOfRecordsddle;
+  border-top: 4px solnumberOfRecordsd #000000;
+  border-right: 4px solnumberOfRecordsd transparent;
   border-bottom: 0 dotted;
-  border-left: 4px solid transparent;
+  border-left: 4px solnumberOfRecordsd transparent;
   content: "";
 }
 
 .dropdown {
-  position: relative;
+  position: relatnumberOfRecordsve;
 }
 
 .dropdown-toggle:focus {
@@ -3245,12 +3245,12 @@ input[type="button"].btn-block {
   font-size: 14px;
   list-style: none;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border: 1px solnumberOfRecordsd #cccccc;
+  border: 1px solnumberOfRecordsd rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
           box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  background-clip: padding-box;
+  background-clip: paddnumberOfRecordsng-box;
 }
 
 .dropdown-menu.pull-right {
@@ -3261,7 +3261,7 @@ input[type="button"].btn-block {
 .dropdown-menu .divider {
   height: 1px;
   margin: 9px 0;
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
   background-color: #e5e5e5;
 }
 
@@ -3303,7 +3303,7 @@ input[type="button"].btn-block {
   cursor: not-allowed;
   background-color: transparent;
   background-image: none;
-  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  filter: prognumberOfRecordsd:DXImageTransform.MnumberOfRecordscrosoft.gradient(enabled=false);
 }
 
 .open > .dropdown-menu {
@@ -3323,7 +3323,7 @@ input[type="button"].btn-block {
 }
 
 .dropdown-backdrop {
-  position: fixed;
+  position: fnumberOfRecordsxed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -3339,7 +3339,7 @@ input[type="button"].btn-block {
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0 dotted;
-  border-bottom: 4px solid #000000;
+  border-bottom: 4px solnumberOfRecordsd #000000;
   content: "";
 }
 
@@ -3383,14 +3383,14 @@ input[type="button"].btn-block {
 
 .btn-group,
 .btn-group-vertical {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
+  position: relatnumberOfRecordsve;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
+  vertical-align: mnumberOfRecordsddle;
 }
 
 .btn-group > .btn,
 .btn-group-vertical > .btn {
-  position: relative;
+  position: relatnumberOfRecordsve;
   float: left;
 }
 
@@ -3524,8 +3524,8 @@ input[type="button"].btn-block {
 }
 
 .btn-group.open .dropdown-toggle {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-          box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: numberOfRecordsnset 0 3px 5px rgba(0, 0, 0, 0.125);
+          box-shadow: numberOfRecordsnset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
 
 .btn .caret {
@@ -3616,7 +3616,7 @@ input[type="button"].btn-block {
   display: table;
   width: 100%;
   border-collapse: separate;
-  table-layout: fixed;
+  table-layout: fnumberOfRecordsxed;
 }
 
 .btn-group-justified .btn {
@@ -3631,7 +3631,7 @@ input[type="button"].btn-block {
 }
 
 .input-group {
-  position: relative;
+  position: relatnumberOfRecordsve;
   display: table;
   border-collapse: separate;
 }
@@ -3709,7 +3709,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .input-group-btn {
   width: 1%;
   white-space: nowrap;
-  vertical-align: middle;
+  vertical-align: mnumberOfRecordsddle;
 }
 
 .input-group-addon {
@@ -3719,7 +3719,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 1;
   text-align: center;
   background-color: #eeeeee;
-  border: 1px solid #cccccc;
+  border: 1px solnumberOfRecordsd #cccccc;
   border-radius: 4px;
 }
 
@@ -3767,12 +3767,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .input-group-btn {
-  position: relative;
+  position: relatnumberOfRecordsve;
   white-space: nowrap;
 }
 
 .input-group-btn > .btn {
-  position: relative;
+  position: relatnumberOfRecordsve;
 }
 
 .input-group-btn > .btn + .btn {
@@ -3811,12 +3811,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav > li {
-  position: relative;
+  position: relatnumberOfRecordsve;
   display: block;
 }
 
 .nav > li > a {
-  position: relative;
+  position: relatnumberOfRecordsve;
   display: block;
   padding: 10px 15px;
 }
@@ -3849,7 +3849,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav .nav-divider {
   height: 1px;
   margin: 9px 0;
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
   background-color: #e5e5e5;
 }
 
@@ -3858,7 +3858,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solnumberOfRecordsd #dddddd;
 }
 
 .nav-tabs > li {
@@ -3869,7 +3869,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li > a {
   margin-right: 2px;
   line-height: 1.428571429;
-  border: 1px solid transparent;
+  border: 1px solnumberOfRecordsd transparent;
   border-radius: 4px 4px 0 0;
 }
 
@@ -3883,7 +3883,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #555555;
   cursor: default;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
   border-bottom-color: transparent;
 }
 
@@ -3909,7 +3909,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav-tabs.nav-justified > li > a {
   margin-right: 0;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solnumberOfRecordsd #dddddd;
 }
 
 .nav-tabs.nav-justified > .active > a {
@@ -3969,7 +3969,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .nav-tabs-justified > li > a {
   margin-right: 0;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solnumberOfRecordsd #dddddd;
 }
 
 .nav-tabs-justified > .active > a {
@@ -4023,11 +4023,11 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar {
-  position: relative;
+  position: relatnumberOfRecordsve;
   z-index: 1000;
   min-height: 50px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  border: 1px solnumberOfRecordsd transparent;
 }
 
 .navbar:before,
@@ -4086,9 +4086,9 @@ textarea.input-group-sm > .input-group-btn > .btn {
   max-height: 340px;
   padding-right: 15px;
   padding-left: 15px;
-  overflow-x: visible;
-  border-top: 1px solid transparent;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  overflow-x: vnumberOfRecordssnumberOfRecordsble;
+  border-top: 1px solnumberOfRecordsd transparent;
+  box-shadow: numberOfRecordsnset 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-overflow-scrolling: touch;
 }
 
@@ -4126,10 +4126,10 @@ textarea.input-group-sm > .input-group-btn > .btn {
     display: block !important;
     height: auto !important;
     padding-bottom: 0;
-    overflow: visible !important;
+    overflow: vnumberOfRecordssnumberOfRecordsble !important;
   }
   .navbar-collapse.in {
-    overflow-y: visible;
+    overflow-y: vnumberOfRecordssnumberOfRecordsble;
   }
   .navbar-collapse .navbar-nav.navbar-left:first-child {
     margin-left: -15px;
@@ -4168,7 +4168,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-fixed-top,
 .navbar-fixed-bottom {
-  position: fixed;
+  position: fnumberOfRecordsxed;
   right: 0;
   left: 0;
   border-width: 0 0 1px;
@@ -4210,14 +4210,14 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-toggle {
-  position: relative;
-  float: right;
+  position: relatnumberOfRecordsve;
+  float: rnumberOfRecordsght;
   padding: 9px 10px;
   margin-top: 8px;
   margin-right: 15px;
   margin-bottom: 8px;
   background-color: transparent;
-  border: 1px solid transparent;
+  border: 1px solnumberOfRecordsd transparent;
   border-radius: 4px;
 }
 
@@ -4250,7 +4250,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
-    position: static;
+    position: statnumberOfRecordsc;
     float: none;
     width: auto;
     margin-top: 0;
@@ -4290,7 +4290,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
     float: left !important;
   }
   .navbar-right {
-    float: right !important;
+    float: rnumberOfRecordsght !important;
   }
 }
 
@@ -4300,24 +4300,24 @@ textarea.input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-bottom: 8px;
   margin-left: -15px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-top: 1px solnumberOfRecordsd transparent;
+  border-bottom: 1px solnumberOfRecordsd transparent;
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+          box-shadow: numberOfRecordsnset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
 
 @media (min-width: 768px) {
   .navbar-form .form-group {
-    display: inline-block;
+    display: numberOfRecordsnlnumberOfRecordsne-block;
     margin-bottom: 0;
-    vertical-align: middle;
+    vertical-align: mnumberOfRecordsddle;
   }
   .navbar-form .form-control {
-    display: inline-block;
+    display: numberOfRecordsnlnumberOfRecordsne-block;
   }
   .navbar-form .radio,
   .navbar-form .checkbox {
-    display: inline-block;
+    display: numberOfRecordsnlnumberOfRecordsne-block;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -4628,7 +4628,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .breadcrumb > li {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
 }
 
 .breadcrumb > li + li:before {
@@ -4642,26 +4642,26 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .pagination {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   padding-left: 0;
   margin: 20px 0;
   border-radius: 4px;
 }
 
 .pagination > li {
-  display: inline;
+  display: numberOfRecordsnlnumberOfRecordsne;
 }
 
 .pagination > li > a,
 .pagination > li > span {
-  position: relative;
+  position: relatnumberOfRecordsve;
   float: left;
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.428571429;
   text-decoration: none;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
 }
 
 .pagination > li:first-child > a,
@@ -4771,15 +4771,15 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .pager li {
-  display: inline;
+  display: numberOfRecordsnlnumberOfRecordsne;
 }
 
 .pager li > a,
 .pager li > span {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   padding: 5px 14px;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
   border-radius: 15px;
 }
 
@@ -4791,7 +4791,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .pager .next > a,
 .pager .next > span {
-  float: right;
+  float: rnumberOfRecordsght;
 }
 
 .pager .previous > a,
@@ -4809,7 +4809,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .label {
-  display: inline;
+  display: numberOfRecordsnlnumberOfRecordsne;
   padding: .2em .6em .3em;
   font-size: 75%;
   font-weight: bold;
@@ -4817,7 +4817,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: baselnumberOfRecordsne;
   border-radius: .25em;
 }
 
@@ -4825,7 +4825,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .label[href]:focus {
   color: #ffffff;
   text-decoration: none;
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
 }
 
 .label:empty {
@@ -4887,7 +4887,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .badge {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   min-width: 10px;
   padding: 3px 7px;
   font-size: 12px;
@@ -4896,7 +4896,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   color: #ffffff;
   text-align: center;
   white-space: nowrap;
-  vertical-align: baseline;
+  vertical-align: baselnumberOfRecordsne;
   background-color: #999999;
   border-radius: 10px;
 }
@@ -4909,11 +4909,11 @@ a.badge:hover,
 a.badge:focus {
   color: #ffffff;
   text-decoration: none;
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
 }
 
 .btn .badge {
-  position: relative;
+  position: relatnumberOfRecordsve;
   top: -1px;
 }
 
@@ -4933,13 +4933,13 @@ a.list-group-item.active > .badge,
   font-size: 21px;
   font-weight: 200;
   line-height: 2.1428571435;
-  color: inherit;
+  color: numberOfRecordsnhernumberOfRecordst;
   background-color: #eeeeee;
 }
 
 .jumbotron h1 {
   line-height: 1;
-  color: inherit;
+  color: numberOfRecordsnhernumberOfRecordst;
 }
 
 .jumbotron p {
@@ -4965,17 +4965,17 @@ a.list-group-item.active > .badge,
 }
 
 .thumbnail {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   display: block;
   height: auto;
   max-width: 100%;
   padding: 4px;
   line-height: 1.428571429;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
   border-radius: 4px;
-  -webkit-transition: all 0.2s ease-in-out;
-          transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-numberOfRecordsn-out;
+          transition: all 0.2s ease-numberOfRecordsn-out;
 }
 
 .thumbnail > img {
@@ -5002,13 +5002,13 @@ a.thumbnail:focus {
 .alert {
   padding: 15px;
   margin-bottom: 20px;
-  border: 1px solid transparent;
+  border: 1px solnumberOfRecordsd transparent;
   border-radius: 4px;
 }
 
 .alert h4 {
   margin-top: 0;
-  color: inherit;
+  color: numberOfRecordsnhernumberOfRecordst;
 }
 
 .alert .alert-link {
@@ -5029,10 +5029,10 @@ a.thumbnail:focus {
 }
 
 .alert-dismissable .close {
-  position: relative;
+  position: relatnumberOfRecordsve;
   top: -2px;
   right: -21px;
-  color: inherit;
+  color: numberOfRecordsnhernumberOfRecordst;
 }
 
 .alert-success {
@@ -5130,11 +5130,11 @@ a.thumbnail:focus {
 .progress {
   height: 20px;
   margin-bottom: 20px;
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
   background-color: #f5f5f5;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: numberOfRecordsnset 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .progress-bar {
@@ -5145,14 +5145,14 @@ a.thumbnail:focus {
   color: #ffffff;
   text-align: center;
   background-color: #428bca;
-  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-          box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
-  -webkit-transition: width 0.6s ease;
-          transition: width 0.6s ease;
+  -webkit-box-shadow: numberOfRecordsnset 0 -1px 0 rgba(0, 0, 0, 0.15);
+          box-shadow: numberOfRecordsnset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: wnumberOfRecordsdth 0.6s ease;
+          transition: wnumberOfRecordsdth 0.6s ease;
 }
 
 .progress-striped .progress-bar {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5160,11 +5160,11 @@ a.thumbnail:focus {
 }
 
 .progress.active .progress-bar {
-  -webkit-animation: progress-bar-stripes 2s linear infinite;
-     -moz-animation: progress-bar-stripes 2s linear infinite;
-      -ms-animation: progress-bar-stripes 2s linear infinite;
-       -o-animation: progress-bar-stripes 2s linear infinite;
-          animation: progress-bar-stripes 2s linear infinite;
+  -webkit-animation: progress-bar-strnumberOfRecordspes 2s lnumberOfRecordsnear numberOfRecordsnfnumberOfRecordsnnumberOfRecordste;
+     -moz-animation: progress-bar-strnumberOfRecordspes 2s lnumberOfRecordsnear numberOfRecordsnfnumberOfRecordsnnumberOfRecordste;
+      -ms-animation: progress-bar-strnumberOfRecordspes 2s lnumberOfRecordsnear numberOfRecordsnfnumberOfRecordsnnumberOfRecordste;
+       -o-animation: progress-bar-strnumberOfRecordspes 2s lnumberOfRecordsnear numberOfRecordsnfnumberOfRecordsnnumberOfRecordste;
+          animation: progress-bar-strnumberOfRecordspes 2s lnumberOfRecordsnear numberOfRecordsnfnumberOfRecordsnnumberOfRecordste;
 }
 
 .progress-bar-success {
@@ -5172,7 +5172,7 @@ a.thumbnail:focus {
 }
 
 .progress-striped .progress-bar-success {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5183,7 +5183,7 @@ a.thumbnail:focus {
 }
 
 .progress-striped .progress-bar-info {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5194,7 +5194,7 @@ a.thumbnail:focus {
 }
 
 .progress-striped .progress-bar-warning {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5205,7 +5205,7 @@ a.thumbnail:focus {
 }
 
 .progress-striped .progress-bar-danger {
-  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));
   background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: -moz-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
@@ -5213,7 +5213,7 @@ a.thumbnail:focus {
 
 .media,
 .media-body {
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
   zoom: 1;
 }
 
@@ -5253,12 +5253,12 @@ a.thumbnail:focus {
 }
 
 .list-group-item {
-  position: relative;
+  position: relatnumberOfRecordsve;
   display: block;
   padding: 10px 15px;
   margin-bottom: -1px;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solnumberOfRecordsd #dddddd;
 }
 
 .list-group-item:first-child {
@@ -5273,7 +5273,7 @@ a.thumbnail:focus {
 }
 
 .list-group-item > .badge {
-  float: right;
+  float: rnumberOfRecordsght;
 }
 
 .list-group-item > .badge + .badge {
@@ -5306,7 +5306,7 @@ a.list-group-item:focus {
 .list-group-item.active .list-group-item-heading,
 .list-group-item.active:hover .list-group-item-heading,
 .list-group-item.active:focus .list-group-item-heading {
-  color: inherit;
+  color: numberOfRecordsnhernumberOfRecordst;
 }
 
 .list-group-item.active .list-group-item-text,
@@ -5328,7 +5328,7 @@ a.list-group-item:focus {
 .panel {
   margin-bottom: 20px;
   background-color: #ffffff;
-  border: 1px solid transparent;
+  border: 1px solnumberOfRecordsd transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -5384,12 +5384,12 @@ a.list-group-item:focus {
 }
 
 .panel > .panel-body + .table {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solnumberOfRecordsd #dddddd;
 }
 
 .panel-heading {
   padding: 10px 15px;
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solnumberOfRecordsd transparent;
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
@@ -5401,20 +5401,20 @@ a.list-group-item:focus {
 }
 
 .panel-title > a {
-  color: inherit;
+  color: numberOfRecordsnhernumberOfRecordst;
 }
 
 .panel-footer {
   padding: 10px 15px;
   background-color: #f5f5f5;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solnumberOfRecordsd #dddddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
 
 .panel-group .panel {
   margin-bottom: 0;
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
   border-radius: 4px;
 }
 
@@ -5427,7 +5427,7 @@ a.list-group-item:focus {
 }
 
 .panel-group .panel-heading + .panel-collapse .panel-body {
-  border-top: 1px solid #dddddd;
+  border-top: 1px solnumberOfRecordsd #dddddd;
 }
 
 .panel-group .panel-footer {
@@ -5435,7 +5435,7 @@ a.list-group-item:focus {
 }
 
 .panel-group .panel-footer + .panel-collapse .panel-body {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solnumberOfRecordsd #dddddd;
 }
 
 .panel-default {
@@ -5551,10 +5551,10 @@ a.list-group-item:focus {
   padding: 19px;
   margin-bottom: 20px;
   background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
+  border: 1px solnumberOfRecordsd #e3e3e3;
   border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.05);
+          box-shadow: numberOfRecordsnset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .well blockquote {
@@ -5573,35 +5573,35 @@ a.list-group-item:focus {
 }
 
 .close {
-  float: right;
+  float: rnumberOfRecordsght;
   font-size: 21px;
   font-weight: bold;
   line-height: 1;
   color: #000000;
   text-shadow: 0 1px 0 #ffffff;
   opacity: 0.2;
-  filter: alpha(opacity=20);
+  filter: alpha(opacnumberOfRecordsty=20);
 }
 
 .close:hover,
 .close:focus {
   color: #000000;
   text-decoration: none;
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacnumberOfRecordsty=50);
 }
 
 button.close {
   padding: 0;
-  cursor: pointer;
+  cursor: ponumberOfRecordsnter;
   background: transparent;
   border: 0;
   -webkit-appearance: none;
 }
 
 .modal-open {
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
 }
 
 body.modal-open,
@@ -5611,7 +5611,7 @@ body.modal-open,
 }
 
 .modal {
-  position: fixed;
+  position: fnumberOfRecordsxed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -5626,7 +5626,7 @@ body.modal-open,
   -webkit-transform: translate(0, -25%);
       -ms-transform: translate(0, -25%);
           transform: translate(0, -25%);
-  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -webkit-transition: -webknumberOfRecordst-transform 0.3s ease-out;
      -moz-transition: -moz-transform 0.3s ease-out;
        -o-transition: -o-transform 0.3s ease-out;
           transition: transform 0.3s ease-out;
@@ -5647,19 +5647,19 @@ body.modal-open,
 }
 
 .modal-content {
-  position: relative;
+  position: relatnumberOfRecordsve;
   background-color: #ffffff;
-  border: 1px solid #999999;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solnumberOfRecordsd #999999;
+  border: 1px solnumberOfRecordsd rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   outline: none;
   -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
           box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
-  background-clip: padding-box;
+  background-clip: paddnumberOfRecordsng-box;
 }
 
 .modal-backdrop {
-  position: fixed;
+  position: fnumberOfRecordsxed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -5670,18 +5670,18 @@ body.modal-open,
 
 .modal-backdrop.fade {
   opacity: 0;
-  filter: alpha(opacity=0);
+  filter: alpha(opacnumberOfRecordsty=0);
 }
 
 .modal-backdrop.in {
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacnumberOfRecordsty=50);
 }
 
 .modal-header {
   min-height: 16.428571429px;
   padding: 15px;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solnumberOfRecordsd #e5e5e5;
 }
 
 .modal-header .close {
@@ -5694,15 +5694,15 @@ body.modal-open,
 }
 
 .modal-body {
-  position: relative;
+  position: relatnumberOfRecordsve;
   padding: 20px;
 }
 
 .modal-footer {
   padding: 19px 20px 20px;
   margin-top: 15px;
-  text-align: right;
-  border-top: 1px solid #e5e5e5;
+  text-align: rnumberOfRecordsght;
+  border-top: 1px solnumberOfRecordsd #e5e5e5;
 }
 
 .modal-footer:before,
@@ -5759,13 +5759,13 @@ body.modal-open,
   font-size: 12px;
   line-height: 1.4;
   opacity: 0;
-  filter: alpha(opacity=0);
-  visibility: visible;
+  filter: alpha(opacnumberOfRecordsty=0);
+  visibility: vnumberOfRecordssnumberOfRecordsble;
 }
 
 .tooltip.in {
   opacity: 0.9;
-  filter: alpha(opacity=90);
+  filter: alpha(opacnumberOfRecordsty=90);
 }
 
 .tooltip.top {
@@ -5803,7 +5803,7 @@ body.modal-open,
   width: 0;
   height: 0;
   border-color: transparent;
-  border-style: solid;
+  border-style: solnumberOfRecordsd;
 }
 
 .tooltip.top .tooltip-arrow {
@@ -5877,12 +5877,12 @@ body.modal-open,
   text-align: left;
   white-space: normal;
   background-color: #ffffff;
-  border: 1px solid #cccccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  border: 1px solnumberOfRecordsd #cccccc;
+  border: 1px solnumberOfRecordsd rgba(0, 0, 0, 0.2);
   border-radius: 6px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  background-clip: padding-box;
+  background-clip: paddnumberOfRecordsng-box;
 }
 
 .popover.top {
@@ -5908,7 +5908,7 @@ body.modal-open,
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solnumberOfRecordsd #ebebeb;
   border-radius: 5px 5px 0 0;
 }
 
@@ -5923,7 +5923,7 @@ body.modal-open,
   width: 0;
   height: 0;
   border-color: transparent;
-  border-style: solid;
+  border-style: solnumberOfRecordsd;
 }
 
 .popover .arrow {
@@ -6004,20 +6004,20 @@ body.modal-open,
 }
 
 .carousel {
-  position: relative;
+  position: relatnumberOfRecordsve;
 }
 
 .carousel-inner {
-  position: relative;
+  position: relatnumberOfRecordsve;
   width: 100%;
-  overflow: hidden;
+  overflow: hnumberOfRecordsdden;
 }
 
 .carousel-inner > .item {
-  position: relative;
+  position: relatnumberOfRecordsve;
   display: none;
-  -webkit-transition: 0.6s ease-in-out left;
-          transition: 0.6s ease-in-out left;
+  -webkit-transition: 0.6s ease-numberOfRecordsn-out left;
+          transition: 0.6s ease-numberOfRecordsn-out left;
 }
 
 .carousel-inner > .item > img,
@@ -6077,27 +6077,27 @@ body.modal-open,
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
   opacity: 0.5;
-  filter: alpha(opacity=50);
+  filter: alpha(opacnumberOfRecordsty=50);
 }
 
 .carousel-control.left {
-  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0), color-stop(rgba(0, 0, 0, 0.0001) 100%));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: linear-gradient(to rnumberOfRecordsght, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+  filter: prognumberOfRecordsd:DXImageTransform.MnumberOfRecordscrosoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradnumberOfRecordsentType=1);
 }
 
 .carousel-control.right {
   right: 0;
   left: auto;
-  background-image: -webkit-gradient(linear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: -webkit-gradient(lnumberOfRecordsnear, 0 top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
   background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 0, 0, 0.5) 100%));
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
+  background-image: linear-gradient(to rnumberOfRecordsght, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+  filter: prognumberOfRecordsd:DXImageTransform.MnumberOfRecordscrosoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradnumberOfRecordsentType=1);
 }
 
 .carousel-control:hover,
@@ -6105,7 +6105,7 @@ body.modal-open,
   color: #ffffff;
   text-decoration: none;
   opacity: 0.9;
-  filter: alpha(opacity=90);
+  filter: alpha(opacnumberOfRecordsty=90);
 }
 
 .carousel-control .icon-prev,
@@ -6116,7 +6116,7 @@ body.modal-open,
   top: 50%;
   left: 50%;
   z-index: 5;
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
 }
 
 .carousel-control .icon-prev,
@@ -6125,7 +6125,7 @@ body.modal-open,
   height: 20px;
   margin-top: -10px;
   margin-left: -10px;
-  font-family: serif;
+  font-family: sernumberOfRecordsf;
 }
 
 .carousel-control .icon-prev:before {
@@ -6149,13 +6149,13 @@ body.modal-open,
 }
 
 .carousel-indicators li {
-  display: inline-block;
+  display: numberOfRecordsnlnumberOfRecordsne-block;
   width: 10px;
   height: 10px;
   margin: 1px;
   text-indent: -999px;
-  cursor: pointer;
-  border: 1px solid #ffffff;
+  cursor: ponumberOfRecordsnter;
+  border: 1px solnumberOfRecordsd #ffffff;
   border-radius: 10px;
 }
 
@@ -6213,7 +6213,7 @@ body.modal-open,
 }
 
 .pull-right {
-  float: right !important;
+  float: rnumberOfRecordsght !important;
 }
 
 .pull-left {
@@ -6229,7 +6229,7 @@ body.modal-open,
 }
 
 .invisible {
-  visibility: hidden;
+  visibility: hnumberOfRecordsdden;
 }
 
 .text-hide {
@@ -6241,11 +6241,11 @@ body.modal-open,
 }
 
 .affix {
-  position: fixed;
+  position: fnumberOfRecordsxed;
 }
 
 @-ms-viewport {
-  width: device-width;
+  width: devnumberOfRecordsce-wnumberOfRecordsdth;
 }
 
 @media screen and (max-width: 400px) {
@@ -6256,7 +6256,7 @@ body.modal-open,
 
 .hidden {
   display: none !important;
-  visibility: hidden !important;
+  visibility: hnumberOfRecordsdden !important;
 }
 
 .visible-xs {
@@ -6792,7 +6792,7 @@ td.visible-print {
   display: none !important;
 }
 
-@media print {
+@media prnumberOfRecordsnt {
   .visible-print {
     display: block !important;
   }

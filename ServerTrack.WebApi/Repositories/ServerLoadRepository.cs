@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using ServerTrack.WebApi.Controllers;
 using ServerTrack.WebApi.Models;
 using ServerTrack.WebApi.Repositories.DataModels;
 using ServerTrack.WebApi.Utilities;
@@ -41,5 +42,22 @@ namespace ServerTrack.WebApi.Repositories
                 });
             }
         }
+
+        public List<AverageLoad> GetAverageLoads(string serverName, LoadAverage minutes, int numberOfRecords)
+        {
+            List<ServerLoadData> serverLoadDataRecords;
+            var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
+            if (!recordExists)
+            {
+                return null;
+            }
+            var averageLoads = new List<AverageLoad>();
+            for (int i = 0; i < numberOfRecords; i++)
+            {
+                averageLoads.Add(new AverageLoad());
+            }
+            return averageLoads;
+        }
     }
+
 }
