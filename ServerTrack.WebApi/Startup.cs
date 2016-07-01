@@ -3,10 +3,12 @@ using System.Reflection;
 using System.Web.Http;
 using Ninject;
 using Ninject.Web.Common.OwinHost;
+using Ninject.Web.WebApi;
 using Ninject.Web.WebApi.OwinHost;
 using Owin;
+using Bootstrapper = ServerTrack.WebApi.Utilities.Bootstrapper;
 
-namespace ServerTrack.WebApi.SelfHost
+namespace ServerTrack.WebApi
 {
 
     public class Startup
@@ -15,11 +17,13 @@ namespace ServerTrack.WebApi.SelfHost
 
         public void Configuration(IAppBuilder appBuilder)
         {
-            var listener = (HttpListener)appBuilder.Properties["System.Net.HttpListener"];
-            listener.AuthenticationSchemes = AuthenticationSchemes.IntegratedWindowsAuthentication;
-            var webApiConfiguration = new HttpConfiguration();
-            appBuilder.UseNinjectMiddleware(CreateKernel).UseNinjectWebApi(webApiConfiguration);
-            WebApiConfig.Register(webApiConfiguration);
+            var config = new HttpConfiguration();
+            config.DependencyResolver = new NinjectDependencyResolver(CreateKernel());
+
+            config.Routes.MapHttpRoute("default", "api/{controller}/{id}", new { id = RouteParameter.Optional });
+
+            appBuilder.UseWebApi(config);
+            WebApiConfig.Register(config);
         }
 
         /// <summary>
@@ -30,7 +34,7 @@ namespace ServerTrack.WebApi.SelfHost
         {
             var kernel = new StandardKernel();
             kernel.Load(Assembly.GetExecutingAssembly());
-            Utilities.Bootstrapper.Configure(kernel);
+            Bootstrapper.Configure(kernel);
             return kernel;
         }
     }
