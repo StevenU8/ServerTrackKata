@@ -32,10 +32,10 @@ namespace ServerTrack.WebApi.Repositories
 
         public List<AverageLoad> GetAverageLoads(string serverName, LoadAverage loadAverageType)
         {
-            BlockingCollection<ServerLoadData> serverLoadDataRecords;
-            var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
-            if (!recordExists)
+            if (!ServerRecords.ContainsKey(serverName))
                 return null;
+
+            var serverLoadDataRecords = ServerRecords[serverName];
 
             var currentTime = Clock.Now;
             var timeframeStart = currentTime.AddSeconds(-currentTime.Second);
