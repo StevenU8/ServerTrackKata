@@ -59,7 +59,7 @@ namespace ServerTrack.WebApi.Tests
                 RamLoad = 2.00d
             };
 
-            var t =  _controller.Post(ServerName, serverLoadData).Result;
+            var t = _controller.Post(ServerName, serverLoadData).Result;
 
             Assert.That(_serverLoadRepository.ServerRecords.Count(), Is.EqualTo(1));
 
@@ -74,7 +74,7 @@ namespace ServerTrack.WebApi.Tests
             Assert.That(serverLoadDataRecord.CpuLoad, Is.EqualTo(1.00d));
             Assert.That(serverLoadDataRecord.RamLoad, Is.EqualTo(2.00d));
             Assert.That(serverLoadDataRecord.RecordedDate, Is.EqualTo(expectedRecordedDate));
-            
+
         }
 
         [Test]
@@ -99,7 +99,7 @@ namespace ServerTrack.WebApi.Tests
                 RamLoad = 2.00d
             };
 
-            _controller.Post(ServerName, serverLoadData);
+            var t = _controller.Post(ServerName, serverLoadData).Result;
 
             Assert.That(_serverLoadRepository.ServerRecords.Count(), Is.EqualTo(1));
 
