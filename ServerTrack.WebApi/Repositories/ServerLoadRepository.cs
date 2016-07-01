@@ -44,7 +44,7 @@ namespace ServerTrack.WebApi.Repositories
             }
         }
 
-        public List<AverageLoad> GetAverageLoads(string serverName, LoadAverage minutes, int numberOfRecords)
+        public List<AverageLoad> GetAverageLoads(string serverName, LoadAverage loadAverageType)
         {
             List<ServerLoadData> serverLoadDataRecords;
             var recordExists = ServerRecords.TryGetValue(serverName, out serverLoadDataRecords);
@@ -53,7 +53,7 @@ namespace ServerTrack.WebApi.Repositories
 
             var currentTime = Clock.Now.AddSeconds(-Clock.Now.Second);
             var averageLoads = new List<AverageLoad>();
-            for (int i = 1; i < numberOfRecords + 1; i++)
+            for (int i = 1; i < (int)loadAverageType + 1; i++)
             {
                 var timeframeEnd = currentTime.AddSeconds(-1);
                 var timeframeStart = currentTime.AddMinutes(-1);

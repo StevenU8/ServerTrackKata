@@ -43,12 +43,12 @@ namespace ServerTrack.WebApi.Controllers
         [HttpGet]
         public HttpResponseMessage Get(string serverName)
         {
-            var lastHourAverages = _serverLoadRepository.GetAverageLoads(serverName, LoadAverage.Minutes, 60);
+            var lastHourAverages = _serverLoadRepository.GetAverageLoads(serverName, LoadAverage.Minutes);
 
             if (lastHourAverages == null)
                 return new HttpResponseMessage(HttpStatusCode.NotFound);
 
-            var lastDayAverages = _serverLoadRepository.GetAverageLoads(serverName, LoadAverage.Hours, 24);
+            var lastDayAverages = _serverLoadRepository.GetAverageLoads(serverName, LoadAverage.Hours);
             var loadAverages = new LoadAverages
             {
                 AverageLoadsByHour = lastDayAverages,
@@ -81,8 +81,8 @@ namespace ServerTrack.WebApi.Controllers
 
     public enum LoadAverage
     {
-        Minutes,
-        Hours
+        Minutes = 60,
+        Hours = 24
     }
 }
 
