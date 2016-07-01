@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Formatting;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
 using ServerTrack.WebApi.Models;
@@ -23,14 +25,14 @@ namespace ServerTrack.WebApi.Controllers
 
         [HttpPost]
         [Route("{serverName}/LoadData")]
-        public HttpResponseMessage Post(string serverName, [FromBody]ServerLoadEntry serverLoadEntry)
+        public async Task<HttpResponseMessage> Post(string serverName, [FromBody]ServerLoadEntry serverLoadEntry)
         {
             if (string.IsNullOrWhiteSpace(serverName))
             {
                 return new HttpResponseMessage(HttpStatusCode.BadRequest);
             }
 
-            _serverLoadRepository.Record(serverName, serverLoadEntry);
+            await Task.Run(() => _serverLoadRepository.Record(serverName, serverLoadEntry));
 
             return new HttpResponseMessage(HttpStatusCode.OK);
         }

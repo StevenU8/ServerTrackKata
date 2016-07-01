@@ -30,7 +30,7 @@ namespace ServerTrack.WebApi.Tests
         {
             var serverLoadData = new ServerLoadEntry();
 
-            var response = _controller.Post(ServerName, serverLoadData);
+            var response = _controller.Post(ServerName, serverLoadData).Result;
 
             Assert.That((int)response.StatusCode, Is.EqualTo(200));
         }
@@ -42,7 +42,7 @@ namespace ServerTrack.WebApi.Tests
         {
             var serverLoadData = new ServerLoadEntry();
 
-            var response = _controller.Post(serverName, serverLoadData);
+            var response = _controller.Post(serverName, serverLoadData).Result;
 
             Assert.That((int)response.StatusCode, Is.EqualTo(400));
         }
@@ -59,7 +59,7 @@ namespace ServerTrack.WebApi.Tests
                 RamLoad = 2.00d
             };
 
-            _controller.Post(ServerName, serverLoadData);
+            var t =  _controller.Post(ServerName, serverLoadData).Result;
 
             Assert.That(_serverLoadRepository.ServerRecords.Count(), Is.EqualTo(1));
 
